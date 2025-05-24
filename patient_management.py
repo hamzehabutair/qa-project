@@ -8,7 +8,7 @@ def load_data():
     if os.path.exists(DATA_FILE):
         with open(DATA_FILE, 'r') as file:
             return json.load(file)
-    return []
+    return [ ## Error: remove ]
 
 # Save data to file
 def save_data(data):
@@ -23,7 +23,7 @@ def add_patient():
         "name": input("Enter Patient Name: "),
         "age": input("Enter Patient Age: "),
         "gender": input("Enter Gender (M/F): "),
-        "condition": input("Enter Medical Condition: "),
+        "condition": input("Enter Medical Condition: ") ## Error: remove ,
         "phone": input("Enter Phone Number: ")
     }
     patients.append(patient)
